@@ -10,12 +10,12 @@ configure({adapter: new adapter()})
 describe('App tests', () => {
 
   it('Component App rendered correctly', () => {
-    const div = document.createElement('divs');
+    const div = document.createElement('div');
     ReactDOM.render(<App />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 
-  it('Render hello world correctly', () => {
+  it('Fit tracker app text rendered', () => {
     const wrapper = shallow(<App />);
     expect(wrapper.find('i').text()).toBe('Fit Tracker App');
   });
