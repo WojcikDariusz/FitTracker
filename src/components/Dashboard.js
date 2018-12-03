@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 
-class Header extends Component {
+class Dashboard extends Component {
 
     render() {
         return (
         <div>
             <p>
-                Header
+                Dashboard
             </p>
         </div>
         )
     };
 };
-export default Header
+export default Dashboard

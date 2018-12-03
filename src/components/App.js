@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
+import Dashboard from './Dashboard';
+import NewEntry from './NewEntry';
 
 class App extends Component {
+
   render() {
     return (
       <div className="App">
-          <i>
-            Fit Tracker App
-          </i>
+        <Header />
+        <Dashboard />
+        <NewEntry />
       </div>
-    );
-  }
-}
+    )
+  };
+};
 
 export default App;

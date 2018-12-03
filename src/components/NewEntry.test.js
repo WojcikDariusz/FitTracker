@@ -1,22 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './Header';
+import NewEntry from './NewEntry';
 import {configure,shallow} from 'enzyme';
 import adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new adapter()});
 
-describe('Header tests', () => {
+describe('New Entry tests', () => {
 
     it('Correctly renders the header html', () => {
         const div = document.createElement('div');
-        ReactDOM.render(<Header />, div);
+        ReactDOM.render(<NewEntry />, div);
         ReactDOM.unmountComponentAtNode(div);
     });
 
     it('renders the text', () => {
-        const textCheck = shallow(<Header />);
-        expect(textCheck.find('p').text()).toBe('Header');
+        const wrapper = shallow(<NewEntry />);
+        expect(wrapper.find('p').text()).toBe('NewEntry');
     });
 
 });
