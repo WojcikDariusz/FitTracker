@@ -25,6 +25,12 @@ describe('App tests', () => {
     expect(wrapper.find('Dashboard').exists()).toBe(true);
     expect(wrapper.find('NewEntry').exists()).toBe(true);
   });
+
+  it('Snapshot matches', () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper).toMatchSnapshot();
+});
+
 });
 
 

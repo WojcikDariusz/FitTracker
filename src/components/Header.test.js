@@ -14,7 +14,7 @@ describe('Header tests', () => {
         ReactDOM.unmountComponentAtNode(div);
     });
 
-    it('renders the text', () => {
+    it('Renders the text', () => {
         const wrapper = shallow(<Header />);
         expect(wrapper.find('h2').text()).toBe('I AM THE BEST');
         wrapper.setState({
@@ -29,5 +29,10 @@ describe('Header tests', () => {
         
         wrapper.find('.header').simulate('click');
         expect(wrapper.state().nameOfTracker).toBe('BEST TRACKING APP')
+    });
+
+    it('Snapshot matches', () => {
+        const wrapper = shallow(<Header />);
+        expect(wrapper).toMatchSnapshot();
     });
 });

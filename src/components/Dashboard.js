@@ -5,9 +5,13 @@ class Dashboard extends Component {
     render() {
         return (
         <div className='dashboard col-xs-8'>
-            <p>
-                Dashboard
-            </p>
+            <div id="myDashHeader">
+                <center>
+                    <h2>
+                        My dashboard
+                    </h2>
+                </center>
+            </div>
         </div>
         )
     };

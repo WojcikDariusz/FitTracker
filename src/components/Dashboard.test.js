@@ -14,10 +14,9 @@ describe('Dashboard tests', () => {
         ReactDOM.unmountComponentAtNode(div);
     });
 
-    it('renders the text', () => {
+    it('Snapshot matches', () => {
         const wrapper = shallow(<Dashboard />);
-        expect(wrapper.find('p').text()).toBe('Dashboard');
+        expect(wrapper).toMatchSnapshot();
     });
-
 });
 
