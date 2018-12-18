@@ -12,7 +12,8 @@ Node.js >= 8.11
 Clone the project and install dependencies:
 
 git clone https://github.com/WojcikDariusz/FitTracker.git
-npm install
+
+<pre>npm install</pre>
 
 npm start
 
