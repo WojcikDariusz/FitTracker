@@ -22,6 +22,8 @@ describe('App tests', () => {
   it('Fit tracker app text rendered', () => {
     const wrapper = shallow(<App />);
     expect(wrapper.find('Header').exists()).toBe(true);
+    expect(wrapper.find('Dashboard').exists()).toBe(true);
+    expect(wrapper.find('NewEntry').exists()).toBe(true);
   });
 });
 

@@ -15,8 +15,8 @@ describe('Dashboard tests', () => {
     });
 
     it('renders the text', () => {
-        const textCheck = shallow(<Dashboard />);
-        expect(textCheck.find('p').text()).toBe('Dashboard');
+        const wrapper = shallow(<Dashboard />);
+        expect(wrapper.find('p').text()).toBe('Dashboard');
     });
 
 });

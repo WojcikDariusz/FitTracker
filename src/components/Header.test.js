@@ -15,8 +15,19 @@ describe('Header tests', () => {
     });
 
     it('renders the text', () => {
-        const textCheck = shallow(<Header />);
-        expect(textCheck.find('p').text()).toBe('Header');
+        const wrapper = shallow(<Header />);
+        expect(wrapper.find('h2').text()).toBe('I AM THE BEST');
+        wrapper.setState({
+            nameOfTracker : "BEST TRACKING APP"
+        });
+        expect(wrapper.find('h2').text()).toBe('BEST TRACKING APP');
     });
 
+    it('Checking if handleClick method works correctly, simulate changes after clicking Header DIV', () => {
+        const wrapper = shallow(<Header />);
+        expect(wrapper.state().nameOfTracker).toBe('I AM THE BEST');
+        
+        wrapper.find('.header').simulate('click');
+        expect(wrapper.state().nameOfTracker).toBe('BEST TRACKING APP')
+    });
 });

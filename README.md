@@ -14,6 +14,8 @@ Clone the project and install dependencies:
 git clone https://github.com/WojcikDariusz/FitTracker.git
 npm install
 
+npm start
+
 Web App is available at: http://localhost:3000 by default.
 
 <b>Tests</b>

@@ -14,9 +14,9 @@ describe('New Entry tests', () => {
         ReactDOM.unmountComponentAtNode(div);
     });
 
-    it('renders the text', () => {
-        const wrapper = shallow(<NewEntry />);
-        expect(wrapper.find('p').text()).toBe('NewEntry');
-    });
+    // it('renders the text', () => {
+    //     const wrapper = shallow(<NewEntry />);
+    //     expect(wrapper.find('p').text()).toBe('NewEntry');
+    // });
 
 });

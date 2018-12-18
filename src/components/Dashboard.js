@@ -4,7 +4,7 @@ class Dashboard extends Component {
 
     render() {
         return (
-        <div>
+        <div className='dashboard col-xs-8'>
             <p>
                 Dashboard
             </p>
@@ -12,4 +12,4 @@ class Dashboard extends Component {
         )
     };
 };
-export default Dashboard
+export default Dashboard;
