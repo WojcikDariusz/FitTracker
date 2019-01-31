@@ -2,7 +2,8 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  min-height: 100%;
+  max-height: 100%;
+  overflow: hidden;
 }
 
 
@@ -10,27 +11,28 @@ body, html {
   height: 100vh;
 }
 
-.header {
-  background-color: yellow;
-}
 
 .newEntry {
-  background-color: lightgrey;
   height: 100%;
   min-height: 100%;
   padding-top : 20px;
+  min-width: 200px;
 }
 
 .dashboard {
-  background-color: pink;
   height: 100%;
   min-height: 100%;
 }
 
 #myDashHeader {
-  background: red;
 }
 
 #ifFinished {
   margin : 10px;
+}
+
+h2 {
+  margin-left: 10px;
+  font-size: 2em;
+  display: inline-block;
 }

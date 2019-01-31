@@ -3,15 +3,22 @@ import React, { Component } from 'react';
 class Dashboard extends Component {
 
     render() {
+
+        const activity = this.props.activities.map( activities => {
+            return <div>
+                    <p>Activity type: {activities.type}</p>
+                    <p>Distance: {activities.distance}</p>
+                    <p>Finished: {activities.ifFinished}</p>
+                    </div>
+        });
+        
+
+
         return (
         <div className='dashboard col-xs-8'>
-            <div id="myDashHeader">
-                <center>
-                    <h2>
-                        My dashboard
-                    </h2>
-                </center>
-            </div>
+          <div> 
+              {activity}
+          </div>           
         </div>
         )
     };
