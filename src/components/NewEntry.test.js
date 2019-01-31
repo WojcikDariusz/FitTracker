@@ -14,7 +14,7 @@ describe('New Entry tests', () => {
         ReactDOM.unmountComponentAtNode(div);
     });
 
-    it('renders the text', () => {
+    it('Snapshot matches', () => {
         const wrapper = shallow(<NewEntry />);
         expect(wrapper).toMatchSnapshot();
     });

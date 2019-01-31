@@ -1,5 +1,843 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`New Entry tests Snapshot matches 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <NewEntry />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <form>
+        <div
+          className="form-group"
+        >
+          <select
+            className="form-control"
+            id="activityType"
+            multiple={true}
+            name="type"
+            onChange={[Function]}
+          >
+            <option
+              name="running"
+            >
+              Running
+            </option>
+            <option
+              name="walking"
+            >
+              Walking
+            </option>
+            <option
+              name="swimming"
+            >
+              Swimming
+            </option>
+            <option
+              name="rollerSkating"
+            >
+              Roller skating
+            </option>
+          </select>
+        </div>
+        <div
+          className="form-group"
+        >
+          <input
+            className="form-control"
+            id="distance"
+            name="distance"
+            onChange={[Function]}
+            placeholder="Distance [m]"
+            type="number"
+          />
+        </div>
+        <div
+          className="form-group"
+        >
+          <input
+            id="ifFinished"
+            name="ifFinished"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <label
+            htmlFor="ifFinished"
+          >
+             Did you finished?
+          </label>
+        </div>
+        <div
+          className="form-group"
+        >
+          <input
+            className="btn btn-primary"
+            id="submit"
+            type="submit"
+            value="Dodaj"
+          />
+        </div>
+      </form>,
+      "className": "newEntry col-xs-4",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="form-group"
+          >
+            <select
+              className="form-control"
+              id="activityType"
+              multiple={true}
+              name="type"
+              onChange={[Function]}
+            >
+              <option
+                name="running"
+              >
+                Running
+              </option>
+              <option
+                name="walking"
+              >
+                Walking
+              </option>
+              <option
+                name="swimming"
+              >
+                Swimming
+              </option>
+              <option
+                name="rollerSkating"
+              >
+                Roller skating
+              </option>
+            </select>
+          </div>,
+          <div
+            className="form-group"
+          >
+            <input
+              className="form-control"
+              id="distance"
+              name="distance"
+              onChange={[Function]}
+              placeholder="Distance [m]"
+              type="number"
+            />
+          </div>,
+          <div
+            className="form-group"
+          >
+            <input
+              id="ifFinished"
+              name="ifFinished"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <label
+              htmlFor="ifFinished"
+            >
+               Did you finished?
+            </label>
+          </div>,
+          <div
+            className="form-group"
+          >
+            <input
+              className="btn btn-primary"
+              id="submit"
+              type="submit"
+              value="Dodaj"
+            />
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <select
+              className="form-control"
+              id="activityType"
+              multiple={true}
+              name="type"
+              onChange={[Function]}
+            >
+              <option
+                name="running"
+              >
+                Running
+              </option>
+              <option
+                name="walking"
+              >
+                Walking
+              </option>
+              <option
+                name="swimming"
+              >
+                Swimming
+              </option>
+              <option
+                name="rollerSkating"
+              >
+                Roller skating
+              </option>
+            </select>,
+            "className": "form-group",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <option
+                  name="running"
+                >
+                  Running
+                </option>,
+                <option
+                  name="walking"
+                >
+                  Walking
+                </option>,
+                <option
+                  name="swimming"
+                >
+                  Swimming
+                </option>,
+                <option
+                  name="rollerSkating"
+                >
+                  Roller skating
+                </option>,
+              ],
+              "className": "form-control",
+              "id": "activityType",
+              "multiple": true,
+              "name": "type",
+              "onChange": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Running",
+                  "name": "running",
+                },
+                "ref": null,
+                "rendered": "Running",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Walking",
+                  "name": "walking",
+                },
+                "ref": null,
+                "rendered": "Walking",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Swimming",
+                  "name": "swimming",
+                },
+                "ref": null,
+                "rendered": "Swimming",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Roller skating",
+                  "name": "rollerSkating",
+                },
+                "ref": null,
+                "rendered": "Roller skating",
+                "type": "option",
+              },
+            ],
+            "type": "select",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <input
+              className="form-control"
+              id="distance"
+              name="distance"
+              onChange={[Function]}
+              placeholder="Distance [m]"
+              type="number"
+            />,
+            "className": "form-group",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "form-control",
+              "id": "distance",
+              "name": "distance",
+              "onChange": [Function],
+              "placeholder": "Distance [m]",
+              "type": "number",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                id="ifFinished"
+                name="ifFinished"
+                onChange={[Function]}
+                type="checkbox"
+              />,
+              <label
+                htmlFor="ifFinished"
+              >
+                 Did you finished?
+              </label>,
+            ],
+            "className": "form-group",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "id": "ifFinished",
+                "name": "ifFinished",
+                "onChange": [Function],
+                "type": "checkbox",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " Did you finished?",
+                "htmlFor": "ifFinished",
+              },
+              "ref": null,
+              "rendered": " Did you finished?",
+              "type": "label",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <input
+              className="btn btn-primary"
+              id="submit"
+              type="submit"
+              value="Dodaj"
+            />,
+            "className": "form-group",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "btn btn-primary",
+              "id": "submit",
+              "type": "submit",
+              "value": "Dodaj",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          "type": "div",
+        },
+      ],
+      "type": "form",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <form>
+          <div
+            className="form-group"
+          >
+            <select
+              className="form-control"
+              id="activityType"
+              multiple={true}
+              name="type"
+              onChange={[Function]}
+            >
+              <option
+                name="running"
+              >
+                Running
+              </option>
+              <option
+                name="walking"
+              >
+                Walking
+              </option>
+              <option
+                name="swimming"
+              >
+                Swimming
+              </option>
+              <option
+                name="rollerSkating"
+              >
+                Roller skating
+              </option>
+            </select>
+          </div>
+          <div
+            className="form-group"
+          >
+            <input
+              className="form-control"
+              id="distance"
+              name="distance"
+              onChange={[Function]}
+              placeholder="Distance [m]"
+              type="number"
+            />
+          </div>
+          <div
+            className="form-group"
+          >
+            <input
+              id="ifFinished"
+              name="ifFinished"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <label
+              htmlFor="ifFinished"
+            >
+               Did you finished?
+            </label>
+          </div>
+          <div
+            className="form-group"
+          >
+            <input
+              className="btn btn-primary"
+              id="submit"
+              type="submit"
+              value="Dodaj"
+            />
+          </div>
+        </form>,
+        "className": "newEntry col-xs-4",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="form-group"
+            >
+              <select
+                className="form-control"
+                id="activityType"
+                multiple={true}
+                name="type"
+                onChange={[Function]}
+              >
+                <option
+                  name="running"
+                >
+                  Running
+                </option>
+                <option
+                  name="walking"
+                >
+                  Walking
+                </option>
+                <option
+                  name="swimming"
+                >
+                  Swimming
+                </option>
+                <option
+                  name="rollerSkating"
+                >
+                  Roller skating
+                </option>
+              </select>
+            </div>,
+            <div
+              className="form-group"
+            >
+              <input
+                className="form-control"
+                id="distance"
+                name="distance"
+                onChange={[Function]}
+                placeholder="Distance [m]"
+                type="number"
+              />
+            </div>,
+            <div
+              className="form-group"
+            >
+              <input
+                id="ifFinished"
+                name="ifFinished"
+                onChange={[Function]}
+                type="checkbox"
+              />
+              <label
+                htmlFor="ifFinished"
+              >
+                 Did you finished?
+              </label>
+            </div>,
+            <div
+              className="form-group"
+            >
+              <input
+                className="btn btn-primary"
+                id="submit"
+                type="submit"
+                value="Dodaj"
+              />
+            </div>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <select
+                className="form-control"
+                id="activityType"
+                multiple={true}
+                name="type"
+                onChange={[Function]}
+              >
+                <option
+                  name="running"
+                >
+                  Running
+                </option>
+                <option
+                  name="walking"
+                >
+                  Walking
+                </option>
+                <option
+                  name="swimming"
+                >
+                  Swimming
+                </option>
+                <option
+                  name="rollerSkating"
+                >
+                  Roller skating
+                </option>
+              </select>,
+              "className": "form-group",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <option
+                    name="running"
+                  >
+                    Running
+                  </option>,
+                  <option
+                    name="walking"
+                  >
+                    Walking
+                  </option>,
+                  <option
+                    name="swimming"
+                  >
+                    Swimming
+                  </option>,
+                  <option
+                    name="rollerSkating"
+                  >
+                    Roller skating
+                  </option>,
+                ],
+                "className": "form-control",
+                "id": "activityType",
+                "multiple": true,
+                "name": "type",
+                "onChange": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Running",
+                    "name": "running",
+                  },
+                  "ref": null,
+                  "rendered": "Running",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Walking",
+                    "name": "walking",
+                  },
+                  "ref": null,
+                  "rendered": "Walking",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Swimming",
+                    "name": "swimming",
+                  },
+                  "ref": null,
+                  "rendered": "Swimming",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Roller skating",
+                    "name": "rollerSkating",
+                  },
+                  "ref": null,
+                  "rendered": "Roller skating",
+                  "type": "option",
+                },
+              ],
+              "type": "select",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <input
+                className="form-control"
+                id="distance"
+                name="distance"
+                onChange={[Function]}
+                placeholder="Distance [m]"
+                type="number"
+              />,
+              "className": "form-group",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "form-control",
+                "id": "distance",
+                "name": "distance",
+                "onChange": [Function],
+                "placeholder": "Distance [m]",
+                "type": "number",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <input
+                  id="ifFinished"
+                  name="ifFinished"
+                  onChange={[Function]}
+                  type="checkbox"
+                />,
+                <label
+                  htmlFor="ifFinished"
+                >
+                   Did you finished?
+                </label>,
+              ],
+              "className": "form-group",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "id": "ifFinished",
+                  "name": "ifFinished",
+                  "onChange": [Function],
+                  "type": "checkbox",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": " Did you finished?",
+                  "htmlFor": "ifFinished",
+                },
+                "ref": null,
+                "rendered": " Did you finished?",
+                "type": "label",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <input
+                className="btn btn-primary"
+                id="submit"
+                type="submit"
+                value="Dodaj"
+              />,
+              "className": "form-group",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "btn btn-primary",
+                "id": "submit",
+                "type": "submit",
+                "value": "Dodaj",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            "type": "div",
+          },
+        ],
+        "type": "form",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
 exports[`New Entry tests renders the text 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],

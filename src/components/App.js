@@ -8,13 +8,31 @@ import '../index.css';
 
 class App extends Component {
 
+  constructor() {
+    super();
+    this.state = {
+        activities : []
+    };
+  }
+
+  addActivity = (activity) => {
+    let newActivities = [ ...this.state.activities ];
+
+    newActivities.push(activity);
+
+    this.setState({
+      activities : newActivities
+    })
+
+  } 
+
   render() {
     return (
       <div>
         <Header />
         <div className="wrapper">
-          <NewEntry />
-          <Dashboard />
+          <NewEntry activities={this.state.activities} addActivity={this.addActivity}/>
+          <Dashboard activities={this.state.activities} />
         </div>
       </div>
     )

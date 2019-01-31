@@ -1,36 +1,32 @@
 import React, { Component } from 'react';
 
+import '../index.css';
+
 class Header extends Component {
 
   constructor() {
     super() 
       this.state = {
-        nameOfTracker : "I AM THE BEST",
+        nameOfTracker : "FitTracker",
         clicked : true,
         textColor : "black",
-        backgroundColor : "white"
+        backgroundColor : "white",
+        fontFamily : "lobster",
+        fontSize : 20
     }
   }
 
-handleClick = () => {
+// handleClick = () => {
 
-  if(this.state.clicked === true) {
-    this.setState({
-      nameOfTracker : "BEST TRACKING APP",
-      textColor : "white",
-      backgroundColor : "black"
-    })
-  } else {
-    this.setState({
-      nameOfTracker: "I AM THE BEST",
-      textColor : "black",
-      backgroundColor : "white"
-    })
-  }
-  this.setState({
-    clicked : !this.state.clicked
-  })
-};
+//   if(this.state.clicked === true) {
+//     this.setState({
+//       nameOfTracker : "FitTracker",
+//       textColor : "white",
+//       backgroundColor : "white",
+    
+//     })
+//   }
+// };
 
 
     render() {
@@ -38,16 +34,27 @@ handleClick = () => {
       let headerCss = {
 
         color : this.state.textColor,
-        backgroundColor : this.state.backgroundColor
-      
+        backgroundColor : this.state.backgroundColor,
+        fontFamily : this.state.fontFamily,
+        fontSize : this.state.fontSize
       }
       
 
         return (
-        <div className='header' style={headerCss} onClick={this.handleClick}>
-            <center>
-             <h2>{this.state.nameOfTracker}</h2>
-            </center>
+        <div className='header' style={headerCss}>
+            <h2>{this.state.nameOfTracker}</h2>
+            <ul className="nav navbar-nav navbar-right">
+             <li className="dropdown">
+                <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                  <ul className="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" className="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+              </li>
+            </ul>
         </div>
         )
     };
